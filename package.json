@@ -1,8 +1,18 @@
 {
   "name": "openclaw-antigravity-cloudserver",
-  "version": "2.0.0",
+  "version": "3.0.0",
+  "type": "module",
   "description": "Free AI Cloud MCP Server — 8 powerful AI tools powered by Workers AI. No API key required.",
-  "main": "worker.js",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
   "keywords": [
     "mcp",
     "mcp-server",
@@ -35,6 +45,20 @@
     "url": "https://github.com/yedanyagamiai-cmd/openclaw-antigravity-cloudserver/issues"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=20"
+  },
+  "dependencies": {
+    "hono": "^4.7.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.8.0",
+    "@cloudflare/workers-types": "^4.20250303.0",
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.0.0",
+    "vitest": "^3.0.0",
+    "wrangler": "^4.0.0"
   }
 }
