@@ -1,0 +1,9 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "maintainers": ["yedanyagamiai-cmd"],
+  "name": "openclaw-antigravity-cloudserver",
+  "description": "Free AI Cloud MCP Server — 8 powerful tools (Llama 4 Scout 17B, DeepSeek R1, FLUX.1 image gen, BGE embeddings, translation, code, extraction). No API key required. $0/day.",
+  "repository": "https://github.com/yedanyagamiai-cmd/openclaw-antigravity-cloudserver",
+  "homepage": "https://openclaw-antigravity-cloudserver.yagami8095.workers.dev",
+  "tags": ["ai", "free", "llm", "chat", "image-generation", "embeddings", "code", "translation", "workers-ai", "mcp"]
+}
