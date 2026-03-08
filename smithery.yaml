@@ -1,0 +1,47 @@
+name: openclaw-antigravity-cloudserver
+description: "Free AI Cloud MCP Server — 8 powerful AI tools (chat, reason, embed, image gen, summarize, translate, code, extract) powered by Workers AI. No API key required. $0 cost."
+vendor: OpenClaw Intelligence
+logo: https://raw.githubusercontent.com/yedanyagamiai-cmd/openclaw-mcp-servers/main/openclaw-logo.png
+homepage: https://github.com/yedanyagamiai-cmd/openclaw-antigravity-cloudserver
+repository: https://github.com/yedanyagamiai-cmd/openclaw-antigravity-cloudserver
+
+startCommand:
+  type: http
+  configSchema:
+    type: object
+    properties: {}
+  commandFunction:
+    |-
+    (config) => ({ url: new URL("https://openclaw-antigravity-cloudserver.yagami8095.workers.dev/sse") })
+
+tools:
+  - name: ai_chat
+    description: "Chat with Llama 4 Scout 17B (16 experts). Multi-turn, system prompts, adjustable creativity."
+  - name: ai_reason
+    description: "Deep reasoning with DeepSeek R1 distill. Chain-of-thought analysis for complex problems."
+  - name: ai_embed
+    description: "768-dim text embeddings (BGE base). Batch up to 20 texts. For RAG, search, clustering."
+  - name: ai_image
+    description: "Generate images from text (FLUX.1 schnell). High-quality, fast, returns base64 PNG."
+  - name: ai_summarize
+    description: "Summarize text (BART Large CNN). Articles, docs, meeting notes. Up to 10K chars."
+  - name: ai_translate
+    description: "Translate between 100+ languages (M2M-100 1.2B). Direct translation, no English intermediary."
+  - name: ai_code
+    description: "Generate, review, debug, refactor, explain, or test code. All major languages."
+  - name: ai_extract
+    description: "Extract entities, sentiment, topics, key facts from text. Structured JSON output."
+
+tags:
+  - ai
+  - free
+  - llm
+  - chat
+  - image-generation
+  - embeddings
+  - code
+  - translation
+  - workers-ai
+  - cloudflare
+  - mcp
+  - no-api-key

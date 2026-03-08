@@ -1,0 +1,15 @@
+# OpenClaw Antigravity Cloud Server — Free AI MCP Server
+# 8 AI tools via MCP protocol, $0/day, powered by Workers AI
+name = "openclaw-antigravity-cloudserver"
+main = "worker.js"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+# Workers AI binding (FREE 100K req/day)
+[ai]
+binding = "AI"
+
+# KV for rate limiting (optional)
+# [[kv_namespaces]]
+# binding = "KV"
+# id = "YOUR_KV_ID"
